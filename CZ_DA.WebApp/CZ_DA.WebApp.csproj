@@ -89,6 +89,33 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Libs\css\animate.min.css" />
+    <Content Include="Libs\css\bootstrap.min.css" />
+    <Content Include="Libs\css\font-awesome.min.css" />
+    <Content Include="Libs\css\style.min.css" />
+    <Content Include="Libs\fonts\fontawesome-webfont.svg" />
+    <Content Include="Libs\imgs\avatar.png" />
+    <Content Include="Libs\imgs\avatar04.png" />
+    <Content Include="Libs\imgs\avatar2.png" />
+    <Content Include="Libs\imgs\avatar3.png" />
+    <Content Include="Libs\imgs\avatar5.png" />
+    <Content Include="Libs\imgs\bg.png" />
+    <Content Include="Libs\imgs\header-profile-skin-1.png" />
+    <Content Include="Libs\imgs\header-profile-skin-3.png" />
+    <Content Include="Libs\imgs\header-profile.png" />
+    <Content Include="Libs\imgs\loading-upload.gif" />
+    <Content Include="Libs\imgs\locked.png" />
+    <Content Include="Libs\imgs\shattered.png" />
+    <Content Include="Libs\imgs\success.png" />
+    <Content Include="Libs\imgs\user.png" />
+    <Content Include="Libs\scripts\bootstrap.min.js" />
+    <Content Include="Libs\scripts\contabs.min.js" />
+    <Content Include="Libs\scripts\hplus.min.js" />
+    <Content Include="Libs\scripts\jquery.metisMenu.js" />
+    <Content Include="Libs\scripts\jquery.min.js" />
+    <Content Include="Libs\scripts\jquery.slimscroll.min.js" />
+    <Content Include="Libs\scripts\layer.min.js" />
+    <Content Include="Libs\scripts\pace.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -101,10 +128,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="Libs\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Libs\fonts\fontawesome-webfont.woff" />
+    <Content Include="Libs\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Libs\fonts\fontawesome-webfont.eot" />
     <None Include="packages.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Main.cshtml" />
+    <Content Include="Views\Shared\_List.cshtml" />
+    <Content Include="Views\Shared\_Form.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
