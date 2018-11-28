@@ -90,6 +90,7 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Libs\css\animate.min.css" />
+    <Content Include="Libs\css\bootstrap-table.min.css" />
     <Content Include="Libs\css\bootstrap.min.css" />
     <Content Include="Libs\css\font-awesome.min.css" />
     <Content Include="Libs\css\style.min.css" />
@@ -108,8 +109,11 @@
     <Content Include="Libs\imgs\shattered.png" />
     <Content Include="Libs\imgs\success.png" />
     <Content Include="Libs\imgs\user.png" />
+    <Content Include="Libs\scripts\bootstrap-table-zh-CN.min.js" />
+    <Content Include="Libs\scripts\bootstrap-table.min.js" />
     <Content Include="Libs\scripts\bootstrap.min.js" />
     <Content Include="Libs\scripts\contabs.min.js" />
+    <Content Include="Libs\scripts\content.min.js" />
     <Content Include="Libs\scripts\hplus.min.js" />
     <Content Include="Libs\scripts\jquery.metisMenu.js" />
     <Content Include="Libs\scripts\jquery.min.js" />

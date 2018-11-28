@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="~/Libs/css/font-awesome.min.css">
     <link rel="stylesheet" href="~/Libs/css/animate.min.css">
     <link rel="stylesheet" href="~/Libs/css/style.min.css">
+    <link rel="stylesheet" href="~/Libs/css/bootstrap-table.min.css" />
 </head>
 <body class="gray-bg">
     <div class="wrapper wrapper-content animated fadeInRight">
@@ -29,7 +30,21 @@
                         </div>
                     </div>
                     <div class="ibox-content">
-                        table
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <table id="exampleTableFromData1" data-mobile-responsive="true">
+                                    <thead>
+                                        <tr>
+                                            <th data-checkbox="true"></th>
+                                            <th data-field="Tid">ID</th>
+                                            <th data-field="First">姓名</th>
+                                            <th data-field="sex">性别</th>
+                                            <th data-field="Score">评分</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -38,6 +53,42 @@
 
     <script type="text/javascript" src="~/Libs/scripts/jquery.min.js?v=2.1.4"></script>
     <script type="text/javascript" src="~/Libs/scripts/bootstrap.min.js?v=3.3.6"></script>
+    <script type="text/javascript" src="~/Libs/scripts/content.min.js"></script>
 
+    <script type="text/javascript" src="~/Libs/scripts/bootstrap-table.min.js"></script>
+    <script type="text/javascript" src="~/Libs/scripts/bootstrap-table-zh-CN.min.js"></script>
+
+    <script type="text/javascript">
+        var e = [
+            { Tid: "1", First: "奔波儿灞", sex: "男", Score: "50" },
+            { Tid: "2", First: "灞波儿奔", sex: "男", Score: "94" },
+            { Tid: "3", First: "作家崔成浩", sex: "男", Score: "80" },
+            { Tid: "4", First: "韩寒", sex: "男", Score: "67" },
+            { Tid: "5", First: null, sex: "男", Score: "100" },
+            { Tid: "6", First: "马云", sex: "男", Score: "77" },
+            { Tid: "7", First: "范爷", sex: "女", Score: "87" }
+        ];
+        $(function () {
+            $('#exampleTableFromData1').bootstrapTable({
+                data: e,
+                undefinedText: '-',
+                striped: true,
+                pagination: true,
+                onlyInfoPagination: true,
+                paginationLoop: true,
+                pageNumber: 1,
+                pageSize: 5,
+                //pageList: [5,10, 25, 50, 100],
+                search: true,
+                searchOnEnterKey: false,
+                strictSearch: true,
+                //searchText: "请搜索",
+                trimOnSearch: true,
+                showColumns: true,
+                showRefresh: true,
+                showFullscreen: true,
+            });
+        });
+    </script>
 </body>
 </html>
