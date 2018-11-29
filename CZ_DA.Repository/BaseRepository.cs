@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CZ_DA.DBContext
+namespace CZ_DA.Repository
 {
-    public class Class1
+    class BaseRepository
     {
     }
 }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CZ_DA.Serverices
+namespace CZ_DA.DBContext
 {
-    public class Class1
+    public class Ado
     {
     }
 }

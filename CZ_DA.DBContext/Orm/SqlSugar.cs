@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CZ_DA.Repository
+namespace CZ_DA.DBContext.Orm
 {
-    public class Class1
+    class SqlSugar
     {
     }
 }
