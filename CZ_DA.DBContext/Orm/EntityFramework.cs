@@ -8,5 +8,7 @@ namespace CZ_DA.DBContext
 {
     public class EntityFramework
     {
+
+
     }
 }

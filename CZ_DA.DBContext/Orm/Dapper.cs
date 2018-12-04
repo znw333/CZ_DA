@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CZ_DA.DBContext.Orm
 {
-    class Dapper
+    public class Dapper
     {
     }
 }
