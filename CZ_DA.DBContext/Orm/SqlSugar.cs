@@ -4,6 +4,7 @@ using System.Data;
 namespace CZ_DA.DBContext.Orm
 {
     using SqlSugar;
+    using CZ_DA.Entity;
     public class SqlSugarBase
     {
         /// <summary>
@@ -13,11 +14,20 @@ namespace CZ_DA.DBContext.Orm
         /// 默认自动关闭数据库链接, 多次操作数据库请勿使用该属性, 可能会造成性能问题
         /// 要自定义请使用GetIntance()方法或者直接使用Exec方法, 传委托
         /// </summary>
-        public static SqlSugarClient DB
+        public static SqlSugarClient SqlSugarDB
         {
             get
             {
-                return InitDB(30, SqlSugar.DbType.MySql, true);
+                var db = InitDB(30, SqlSugar.DbType.MySql, true);
+                //初始
+                db.CodeFirst.InitTables(
+                    typeof(Sys_Users),
+                    typeof(Sys_Position),
+                    typeof(Sys_Departments),
+                    typeof(Sys_Companys),
+                    typeof(Con_Linkman)
+                );
+                return db;
             }
         }
 

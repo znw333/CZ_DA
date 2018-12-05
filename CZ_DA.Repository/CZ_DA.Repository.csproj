@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="SqlSugar, Version=4.9.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\sqlSugar.4.9.7\lib\SqlSugar.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,6 +46,23 @@
   <ItemGroup>
     <Compile Include="BaseRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CZ_DA.DBContext\CZ_DA.DBContext.csproj">
+      <Project>{f1ce67e0-f815-4d54-9bd3-bf02f1ea8299}</Project>
+      <Name>CZ_DA.DBContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CZ_DA.Entity\CZ_DA.Entity.csproj">
+      <Project>{dd0aac35-c5f3-4083-a107-79aea907824d}</Project>
+      <Name>CZ_DA.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CZ_DA.IRepository\CZ_DA.IRepository.csproj">
+      <Project>{0742c950-7058-43ce-8b7d-00b46d6a6303}</Project>
+      <Name>CZ_DA.IRepository</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

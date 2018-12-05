@@ -42,7 +42,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IBaseRepository.cs" />
+    <Compile Include="IConLinkmanRespository.cs" />
+    <Compile Include="ISysCompanysRepository.cs" />
+    <Compile Include="ISysDepartmentsRepository.cs" />
+    <Compile Include="ISysPositionRepository.cs" />
+    <Compile Include="ISysUsersRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CZ_DA.Entity\CZ_DA.Entity.csproj">
+      <Project>{dd0aac35-c5f3-4083-a107-79aea907824d}</Project>
+      <Name>CZ_DA.Entity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

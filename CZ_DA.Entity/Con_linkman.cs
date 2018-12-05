@@ -3,6 +3,8 @@
 namespace CZ_DA.Entity
 {
     using SqlSugar;
+
+    [SugarTable("Con_Linkman", "Con_Linkman")]
     public class Con_Linkman
     {
         [SugarColumn(IsPrimaryKey = true, IsIdentity = true, IsNullable = false, Length = 11)]

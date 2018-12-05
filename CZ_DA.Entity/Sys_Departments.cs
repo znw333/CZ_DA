@@ -3,6 +3,8 @@
 namespace CZ_DA.Entity
 {
     using SqlSugar;
+
+    [SugarTable("Sys_Departments", "Sys_Departments")]
     public class Sys_Departments
     {
         [SugarColumn(IsPrimaryKey = true, IsIdentity = true, IsNullable = false, Length = 11)]
