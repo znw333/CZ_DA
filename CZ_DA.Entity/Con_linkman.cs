@@ -80,5 +80,26 @@ namespace CZ_DA.Entity
 
         [SugarColumn(Length = 50)]
         public string CompanyName { get; set; }
+        /// <summary>
+        /// 状态
+        /// </summary>
+        [SugarColumn(Length = 11)]
+        public int State { get; set; } = 0;
+
+        [SugarColumn(Length = 11)]
+        public long CreatedId { get; set; } = 0;
+
+        [SugarColumn(Length = 20)]
+        public string CreatedName { get; set; }
+
+        public DateTime CreatedDatetime { get; set; } = DateTime.Now;
+
+        [SugarColumn(Length = 11)]
+        public long ModifiedId { get; set; } = 0;
+
+        [SugarColumn(Length = 20)]
+        public string ModifiedName { get; set; }
+
+        public DateTime ModifiedDatetime { get; set; } = DateTime.Now;
     }
 }
